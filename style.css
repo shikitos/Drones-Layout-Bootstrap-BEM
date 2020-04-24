@@ -1,0 +1,11 @@
+/* FONTS */
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(/fonts/ProximaNova-Regular.ttf)
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url(/fonts/ProximaNova-Bold.ttf);
+}
