@@ -1,0 +1,70 @@
+/* FONTS */
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(/fonts/ProximaNova-Regular.ttf)
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url(/fonts/ProximaNova-Bold.ttf);
+}
+
+
+/*=======================HEADER=========================*/
+
+header {
+    background: url(../img/header_bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header__nav {
+    padding: 90px 0 205px 0;
+}
+
+
+/*Need to correct this*/
+
+
+/*
+.header__nav img:nth-child(1) {
+margin-left: 35px;
+}*/
+
+.header__nav li,
+a {
+    display: inline-block;
+    font-family: ProximaNovaBold;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    transition: 0.5s;
+}
+
+.header__nav a:hover {
+    color: #f0f0f0;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+.header__nav li:nth-child(-n+3) {
+    margin-right: 40px;
+}
+
+.header__nav button {
+    /*vertical-align: center;*/
+    padding: 25px 50px 25px 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-family: ProximaNovaBold;
+    font-style: bold;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: transparent;
+    transform: skewX(-15deg);
+}
+
+
+/* Need to sort out with skew */
