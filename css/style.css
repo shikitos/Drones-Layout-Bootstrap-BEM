@@ -14,22 +14,25 @@
 /*=======================HEADER=========================*/
 
 header {
-    background: url(../img/header_bg.jpg) no-repeat;
+    background: url(../img/header_bg.jpg) no-repeat #291911;
     background-size: cover;
 }
 
+
+/*
 .header__nav {
-    padding: 90px 0 205px 0;
-}
+    margin: 0 0 205px 0;
+    display: flex;
+    align-self: center;
+}*/
 
 
 /*Need to correct this*/
 
-
-/*
-.header__nav img:nth-child(1) {
-margin-left: 35px;
-}*/
+.header__nav img[alt="Logotype"] {
+    margin-top: 83px;
+    margin-bottom: 75px;
+}
 
 .header__nav li,
 a {
@@ -39,6 +42,7 @@ a {
     font-size: 18px;
     letter-spacing: 0.025em;
     transition: 0.5s;
+    margin-top: 44.5px;
 }
 
 .header__nav a:hover {
@@ -51,9 +55,16 @@ a {
     margin-right: 40px;
 }
 
+
+/*
+skewX(-11deg)*/
+
+
+/* Need to sort out with skew */
+
 .header__nav button {
     /*vertical-align: center;*/
-    padding: 25px 50px 25px 50px;
+    padding: 20px 42px 20px 42px;
     border: 2px solid #fff;
     color: #fff;
     text-decoration: none;
@@ -63,8 +74,46 @@ a {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     background: transparent;
-    transform: skewX(-15deg);
+    margin: 65px 0 0 27px;
 }
 
+.header__title h1 {
+    font-family: ProximaNovaBold;
+    font-size: 106px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    margin-bottom: 40px;
+}
 
-/* Need to sort out with skew */
+.header__title p {
+    font-family: ProximaNova;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.025em;
+    margin-bottom: 45px;
+}
+
+.header__title button {
+    margin: auto;
+    margin-bottom: 180px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    font-family: ProximaNovaBold;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    padding: 20px 42px 20px 42px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.header__title img {
+    margin-bottom: 80px;
+    transition: 0.5s;
+}
+
+.header__title img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
