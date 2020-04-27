@@ -11,6 +11,56 @@
 }
 
 
+/*======================MAIN PART=======================*/
+
+body {
+    background: #1c1c1c;
+}
+
+hr {
+    border: none;
+    background-color: #313131;
+    color: #313131;
+    /* For IE6-7 */
+    height: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: ProximaNovaBold;
+    letter-spacing: 0.025em;
+}
+
+.button {
+    -ms-transform: skewX(-11deg);
+    /* IE 9 */
+    -webkit-transform: skewX(-11deg);
+    /* Safari */
+    transform: skewX(-11deg);
+    padding: 12px 42px 12px 42px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-family: ProximaNovaBold;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.button-text {
+    -ms-transform: skewX(11deg);
+    /* IE 9 */
+    -webkit-transform: skewX(11deg);
+    /* Safari */
+    transform: skewX(11deg);
+    /*  padding: 20px;*/
+}
+
+
 /*=======================HEADER=========================*/
 
 header {
@@ -18,20 +68,10 @@ header {
     background-size: cover;
 }
 
-
-/*
-.header__nav {
-    margin: 0 0 205px 0;
-    display: flex;
-    align-self: center;
-}*/
-
-
-/*Need to correct this*/
-
 .header__nav img[alt="Logotype"] {
     margin-top: 83px;
     margin-bottom: 75px;
+    margin-left: 10px;
 }
 
 .header__nav li,
@@ -42,7 +82,7 @@ a {
     font-size: 18px;
     letter-spacing: 0.025em;
     transition: 0.5s;
-    margin-top: 44.5px;
+    margin-top: 40px;
 }
 
 .header__nav a:hover {
@@ -55,25 +95,7 @@ a {
     margin-right: 40px;
 }
 
-
-/*
-skewX(-11deg)*/
-
-
-/* Need to sort out with skew */
-
 .header__nav button {
-    /*vertical-align: center;*/
-    padding: 20px 42px 20px 42px;
-    border: 2px solid #fff;
-    color: #fff;
-    text-decoration: none;
-    font-family: ProximaNovaBold;
-    font-style: bold;
-    font-size: 18px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    background: transparent;
     margin: 65px 0 0 27px;
 }
 
@@ -87,7 +109,7 @@ skewX(-11deg)*/
 
 .header__title p {
     font-family: ProximaNova;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     letter-spacing: 0.025em;
     margin-bottom: 45px;
@@ -96,24 +118,134 @@ skewX(-11deg)*/
 .header__title button {
     margin: auto;
     margin-bottom: 180px;
-    text-transform: uppercase;
-    background: transparent;
-    color: #fff;
-    font-family: ProximaNovaBold;
-    font-size: 16px;
-    letter-spacing: 0.025em;
-    padding: 20px 42px 20px 42px;
-    border: 2px solid #fff;
     display: flex;
-    justify-content: center;
 }
 
 .header__title img {
-    margin-bottom: 80px;
+    margin-bottom: 200px;
     transition: 0.5s;
 }
 
 .header__title img:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+
+/*========================READMORE==================*/
+
+.readmore__text h2 {
+    color: #ffffff;
+    font-size: 48px;
+    margin: 120px 0 50px 20%;
+}
+
+.readmore__text p {
+    font-family: ProximaNova;
+    font-size: 20px;
+    color: #6e6e6e;
+    margin: 0 0 40px 20%;
+}
+
+.readmore__text .button {
+    margin: 25px 0 180px 20%;
+}
+
+.readmore__img {
+    background: url(../img/readmore_drone.jpg) no-repeat center center;
+    background-size: contain;
+}
+
+
+/*=======================VIDEO==============*/
+
+.video {
+    padding: 0;
+}
+
+.video iframe {
+    height: 110vh;
+    width: 100%;
+    /*border: none;*/
+}
+
+
+/*=====================SERVICES======================*/
+
+.services__heading h2 {
+    color: #ffffff;
+    font-size: 48px;
+    margin: 80px 0 25px 0;
+}
+
+.services__heading p {
+    color: #6e6e6e;
+    margin-bottom: 90px;
+    font-family: ProximaNova;
+    font-size: 16px;
+}
+
+.services__block1 h3,
+.services__block2 h3,
+.services__block3 h3 {
+    color: #ffffff;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.services__block1 p,
+.services__block2 p,
+.services__block3 p {
+    color: #6e6e6e;
+    font-family: ProximaNova;
+    font-size: 16px;
+    margin: 15px 0 120px 0;
+}
+
+
+/*===================Specifications================*/
+
+.specifications__heading h2 {
+    color: #fff;
+    font-size: 42px;
+    margin: 120px 0 40px 0;
+}
+
+.specifications__heading p {
+    color: #6e6e6e;
+    font-size: 16px;
+    margin-bottom: 110px;
+}
+
+.specifications-img {
+    background: url(../img/specifications_drone.png) no-repeat center center;
+    background-size: contain;
+    justify-content: start;
+}
+
+.specifications__leftcol {
+    margin-left: 15%;
+    margin-bottom: 100px;
+}
+
+.specifications__leftcol h5,
+.specifications__rightcol h5 {
+    font-size: 16px;
+    color: #6e6e6e;
+}
+
+.specifications__leftcol p,
+.specifications__rightcol p {
+    color: #ffffff;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+
+/*======================MOUNTS==========================*/
+
+.mounts {
+    background-color: #fff;
 }
